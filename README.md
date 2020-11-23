@@ -1,5 +1,15 @@
 
 # README
+<<<<<<< Updated upstream
+=======
+## usersテーブル
+| Column   | Type   | Options     |
+| -------- | ------ | ----------- |
+| nickname | string | null: false |
+| name     | string | null: false |
+| email    | string | unique:true |
+| password | string | null: false |
+>>>>>>> Stashed changes
 
 <<<<<<< Updated upstream
 =======
@@ -21,30 +31,38 @@
 
 
 ### Association
-- belongs_to :users
-- has_one    :buys
+- belongs_to :user
+- has_one    :buy
 
 ## buysテーブル
 
 |Column|Type        |Options|
-|buyer | string     | null:false|
 |users_id|references| foreign_key:true|
 |items_id|references| foreign_key:true|
 
+
 ### Association
-- belongs_to  :users
-- belongs_to  :items
-- has_one     :adresses
+- belongs_to  :user
+- belongs_to  :item
+- has_one     :address
 
 
 
 ### Addressesテーブル
-|Column  |Type   |Options|
-|adresses|string |null:false|
+|Column      |Type   |Options|
+|address     |string |null:false|
+|post_code   |string |null:false|
+|prefecture  |string |null: false|
+|phone_number|string |null: false|
+
 
 
 
 ### Association
+<<<<<<< Updated upstream
 - belongs_to  :buys
 1
+>>>>>>> Stashed changes
+=======
+- belongs_to  :buy
 >>>>>>> Stashed changes
