@@ -22,14 +22,14 @@
 
 ## itemsテーブル
 
-|Column       |Type     |Options     |
+|Column          |Type     |Options     |
 
-|name         | string  | null: false |
-|category     | integer  | null: false |
-|description  | string  | null:false  |
-|condition    | integer  | null: false |
-|fee          | integer | null: false |
-|shipping_date| integer  | null: false |
+|name            | string  | null: false |
+|category_id     | integer  | null: false |
+|description_id  | string  | null:false  |
+|condition_id    | integer  | null: false |
+|fee_id          | integer | null: false |
+|shipping_date_id| integer  | null: false |
 |price        | integer | null: false |
 |seller       | string  | null: false |
 |users_id     | integer | foreign_key:true|
