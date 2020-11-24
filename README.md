@@ -1,18 +1,16 @@
 
 # README
-<<<<<<< Updated upstream
-=======
-## usersテーブル
-| Column   | Type   | Options     |
-| -------- | ------ | ----------- |
-| nickname | string | null: false |
-| name     | string | null: false |
-| email    | string | unique:true |
-| password | string | null: false |
->>>>>>> Stashed changes
 
-<<<<<<< Updated upstream
-=======
+## usersテーブル
+| Column            | Type   | Options     |
+| nickname          | string | null: false |
+| name              | string | null: false |
+| email             | string | unique:true |
+| password          | string | null: false |
+|encrypted_password | string | null: false |
+|family_name        | string | null: false |
+|first_name         | string | null: false |    
+|date_of_birth      |integer | null: false | 
 
 ### Association
 - has_many :items
@@ -22,12 +20,17 @@
 
 ## itemsテーブル
 
-|Column    |Type    |Options|
-|items name| string | null: false |
-|category  | string | null: false |
-|price     | string | null: false |
-|seller    | string | null: false |
-|users_id  | references | foreign_key:true|
+|Column       |Type     |Options     |
+|image        | string  |            |
+|name         | string  | null: false |
+|category     | string  | null: false |
+|description  | string  | null:false  |
+|condition    | string  | null: false |
+|fee          | string  | null: false |
+|shipping_date| string  | null: false |
+|price        | integer | null: false |
+|seller       | string  | null: false |
+|users_id     | integer | foreign_key:true|
 
 
 ### Association
@@ -59,10 +62,6 @@
 
 
 ### Association
-<<<<<<< Updated upstream
-- belongs_to  :buys
-1
->>>>>>> Stashed changes
-=======
 - belongs_to  :buy
->>>>>>> Stashed changes
+- belongs_to  :buy
+
