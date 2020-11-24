@@ -3,9 +3,10 @@
 
 ## usersテーブル
 | Column                 | Type   | Options     |
+
 | nickname               | string | null: false |
 | name                   | string | null: false |
-| email                  | string | unique:true |
+| email                  | string | null: false |
 | password               | string | null: false |
 |encrypted_password      | string | null: false |
 |family_name             | string | null: false |
@@ -24,15 +25,13 @@
 
 |Column          |Type     |Options     |
 
-|name            | string  | null: false |
 |category_id     | integer  | null: false |
-|description_id  | string  | null:false  |
+|description_id  | text     | null:false  |
 |condition_id    | integer  | null: false |
-|fee_id          | integer | null: false |
-|shipping_date_id| integer  | null: false |
-|price        | integer | null: false |
-|seller       | string  | null: false |
-|users_id     | integer | foreign_key:true|
+|fee_id          | integer  | null: false |
+|shopping_date_id| integer  | null: false |
+|price           | integer  | null: false |
+|users_id        | integer  | foreign_key:true|
 
 
 ### Association
@@ -57,7 +56,9 @@
 |Column         |Type   |Options|
 |address        |string |null:false|
 |post_code      |string |null:false|
-|prefecture_id  |integer |null: false|
+|prefecture_id  |integer|null: false|
+|city           |string |null: false|
+|building_number|string |null: false|
 |phone_number   |string |null: false|
 
 
