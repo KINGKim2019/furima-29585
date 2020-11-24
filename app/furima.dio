@@ -1,4 +1,4 @@
-<mxfile host="65bd71144e" modified="2020-11-24T06:35:22.376Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.51.1 Chrome/83.0.4103.122 Electron/9.3.3 Safari/537.36" etag="DwJnyzaOasp4skhHfzUw" version="13.6.5">
+<mxfile host="65bd71144e" modified="2020-11-24T07:53:03.911Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.51.1 Chrome/83.0.4103.122 Electron/9.3.3 Safari/537.36" etag="W0Ne48XECCjETqUu1nkf" version="13.6.5">
     <diagram id="Xs9mcjdkjIUMlHlnAuPL" name="ページ1">
         <mxGraphModel dx="594" dy="431" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
             <root>
@@ -102,8 +102,8 @@
                 <mxCell id="54" value="post_code" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="850" y="96" width="40" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="57" value="prefecture" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
-                    <mxGeometry x="835" y="130" width="70" height="20" as="geometry"/>
+                <mxCell id="57" value="&amp;nbsp; &amp;nbsp; &amp;nbsp;prefecture_id" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
+                    <mxGeometry x="820" y="130" width="100" height="20" as="geometry"/>
                 </mxCell>
                 <mxCell id="59" value="phone_number&lt;br&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
                     <mxGeometry x="835" y="170" width="100" height="20" as="geometry"/>
