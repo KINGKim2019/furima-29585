@@ -3,10 +3,8 @@
 
 ## usersテーブル
 | Column                 | Type   | Options     |
-
 | nickname               | string | null: false |
 | email                  | string | null: false |
-| password               | string | null: false |
 |encrypted_password      | string | null: false |
 |family_name             | string | null: false |
 |first_name              | string | null: false | 
@@ -22,15 +20,20 @@
 
 ## itemsテーブル
 
-|Column          |Type     |Options     |
-
-|category_id     | integer  | null: false |
-|description_id  | text     | null:false  |
-|condition_id    | integer  | null: false |
-|fee_id          | integer  | null: false |
-|shopping_date_id| integer  | null: false |
-|price           | integer  | null: false |
-|user_id         | integer  | foreign_key:true|
+|Column                      |Type      |Options     |
+|category_id                 | integer  | null: false |
+|name                        | string   | null: false |
+|information                 | string   | null: false |
+|Price Half-width number     | string   | null: false |
+|Price Out of setting range  | string   | null: false |
+|Sales status Select         | string   | null: false |
+|Scheduled delivery Select   | string   | null: false |
+|description_id              | text     | null:false  |
+|condition_id                | integer  | null: false |
+|fee_id                      | integer  | null: false |
+|shopping_date_id            | integer  | null: false |
+|price                       | integer  | null: false |
+|user_id                     |references| foreign_key:true|
 
 
 ### Association
@@ -40,8 +43,8 @@
 ## buysテーブル
 
 |Column|Type        |Options|
-|users|references| foreign_key:true|
-|items|references| foreign_key:true|
+|user|references| foreign_key:true|
+|item|references| foreign_key:true|
 
 
 ### Association
@@ -57,7 +60,7 @@
 |post_code      |string |null:false|
 |prefecture_id  |integer|null: false|
 |city           |string |null: false|
-|building_number|string |null: false|
+|building_number|string |           |
 |phone_number   |string |null: false|
 
 
