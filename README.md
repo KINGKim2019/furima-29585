@@ -20,15 +20,11 @@
 
 ## itemsテーブル
 
-|Column                      |Type      |Options     |
-|category_id                 | integer  | null: false |
-|name                        | string   | null: false |
-|information                 | string   | null: false |
-|price_half_width_number     | string   | null: false |
-|price_out_of_setting_range  | string   | null: false |
-|sales_status_select         | string   | null: false |
-|scheduled_delivery_select   | string   | null: false |
-|description_id              | text     | null:false  |
+|Column                         |Type      |Options     |
+|category_id                    | integer  | null: false |
+|name                           | string   | null: false |
+|information                    | text     | null: false |
+|scheduled_delivery_select_id   | integer  | null: false |
 |condition_id                | integer  | null: false |
 |fee_id                      | integer  | null: false |
 |shopping_date_id            | integer  | null: false |
