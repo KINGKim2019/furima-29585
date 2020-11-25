@@ -24,16 +24,16 @@
 |category_id                 | integer  | null: false |
 |name                        | string   | null: false |
 |information                 | string   | null: false |
-|Price Half-width number     | string   | null: false |
-|Price Out of setting range  | string   | null: false |
-|Sales status Select         | string   | null: false |
-|Scheduled delivery Select   | string   | null: false |
+|price_half_width_number     | string   | null: false |
+|price_out_of_setting_range  | string   | null: false |
+|sales_status_select         | string   | null: false |
+|scheduled_delivery_select   | string   | null: false |
 |description_id              | text     | null:false  |
 |condition_id                | integer  | null: false |
 |fee_id                      | integer  | null: false |
 |shopping_date_id            | integer  | null: false |
 |price                       | integer  | null: false |
-|user_id                     |references| foreign_key:true|
+|user                        |references| foreign_key:true|
 
 
 ### Association
