@@ -5,7 +5,6 @@
 | Column                 | Type   | Options     |
 
 | nickname               | string | null: false |
-| name                   | string | null: false |
 | email                  | string | null: false |
 | password               | string | null: false |
 |encrypted_password      | string | null: false |
@@ -31,7 +30,7 @@
 |fee_id          | integer  | null: false |
 |shopping_date_id| integer  | null: false |
 |price           | integer  | null: false |
-|users_id        | integer  | foreign_key:true|
+|user_id         | integer  | foreign_key:true|
 
 
 ### Association
