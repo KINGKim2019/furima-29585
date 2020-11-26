@@ -41,7 +41,7 @@
 |Column|Type        |Options|
 |user   |references| foreign_key:true|
 |item   |references| foreign_key:true|
-|address|references| foreign_key:true|
+
 
 
 ### Association
@@ -52,13 +52,14 @@
 
 
 ### Addressesテーブル
-|Column         |Type   |Options|
-|address        |string |null:false|
-|post_code      |string |null:false|
-|prefecture_id  |integer|null: false|
-|city           |string |null: false|
-|building_number|string |           |
-|phone_number   |string |null: false|
+|Column         |Type      |Options|
+|buy            |references| foreign_key:true|
+|address        |string    |null:false|
+|post_code      |string    |null:false|
+|prefecture_id  |integer   |null: false|
+|city           |string    |null: false|
+|building_number|string    |           |
+|phone_number   |string    |null: false|
 
 
 
